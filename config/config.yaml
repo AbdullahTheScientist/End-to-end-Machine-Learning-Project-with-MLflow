@@ -27,11 +27,11 @@ model_trainer:
 
 
   
-class ModelTrainerConfig:
-    root_dir: Path
-    train_data_path: Path
-    test_data_path: Path
-    model_name: str
-    alpha: float
-    l1_ratio: float
-    target_column: str
+
+model_evaluation:
+  root_dir: artifacts/model_evaluation
+  test_data_path: artifacts/data_transformation/test.csv
+  model_path: artifacts/model_trainer/model.joblib
+  metric_file_name: artifacts/model_evaluation/metrics.json
+
+
